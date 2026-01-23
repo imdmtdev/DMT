@@ -35,8 +35,14 @@ git branch -M main
 echo Done!
 echo.
 
+REM Remove old remote if exists
+echo [6/7] Xoa remote cu (neu co)...
+git remote remove origin 2>nul
+echo Done!
+echo.
+
 REM Add remote
-echo [6/6] Ket noi voi GitHub...
+echo [7/7] Ket noi voi GitHub...
 git remote add origin https://github.com/dangminhtri123/DMT.git
 echo Done!
 echo.
