@@ -1,0 +1,60 @@
+========================================
+  HƯỚNG DẪN NHANH - DEPLOY WEBSITE DMT
+========================================
+
+📋 BƯỚC 1: SETUP LẦN ĐẦU
+--------------------------
+1. Double-click file: SETUP_GITHUB.bat
+2. Chờ chạy xong
+3. Double-click file: PUSH_TO_GITHUB.bat
+4. Đăng nhập GitHub khi được yêu cầu:
+   - Username: dangminhtri123
+   - Password: Dùng Personal Access Token (không phải password thường)
+
+🔐 TẠO PERSONAL ACCESS TOKEN:
+------------------------------
+1. Vào: https://github.com/settings/tokens
+2. Click "Generate new token" → "Generate new token (classic)"
+3. Note: DMT Website
+4. Expiration: No expiration
+5. Tick vào: ✅ repo
+6. Click "Generate token"
+7. Copy token và dùng làm password
+
+🚀 BƯỚC 2: BẬT GITHUB PAGES
+----------------------------
+1. Vào: https://github.com/dangminhtri123/DMT
+2. Click tab "Settings"
+3. Click "Pages" (menu bên trái)
+4. Source: chọn "GitHub Actions"
+5. Xong!
+
+✅ BƯỚC 3: KIỂM TRA
+-------------------
+1. Click tab "Actions" để xem quá trình build
+2. Chờ 2-3 phút
+3. Website live tại: https://dangminhtri123.github.io/DMT/
+
+🔄 CẬP NHẬT SAU NÀY:
+--------------------
+Mỗi khi thay đổi code:
+1. Double-click: UPDATE_WEBSITE.bat
+2. Xong! Tự động deploy
+
+🌐 NỐI DOMAIN (NẾU CÓ):
+------------------------
+1. Sửa file public/CNAME thành domain của bạn
+2. Thêm DNS records tại nhà cung cấp domain:
+   Type: A, Name: @, Value: 185.199.108.153
+   Type: A, Name: @, Value: 185.199.109.153
+   Type: A, Name: @, Value: 185.199.110.153
+   Type: A, Name: @, Value: 185.199.111.153
+3. Settings → Pages → Custom domain → Nhập domain
+4. Chờ 24-48h
+
+🆘 HỖ TRỢ:
+-----------
+- GitHub Pages: https://docs.github.com/pages
+- Liên hệ: dangtriofficial@gmail.com
+
+========================================
