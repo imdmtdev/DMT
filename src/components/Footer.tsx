@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <div className="relative w-10 h-10 rounded-lg overflow-hidden">
                 <img 
-                  src="/icon.jpg" 
+                  src="/DMT/icon.jpg" 
                   alt="DMT Logo" 
                   className="w-full h-full object-cover"
                 />
