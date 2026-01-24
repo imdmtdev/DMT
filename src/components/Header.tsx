@@ -37,7 +37,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-10 h-10 rounded-lg overflow-hidden group-hover:scale-110 transition-transform">
               <img 
-                src="/DMT/icon.jpg" 
+                src="/icon.jpg" 
                 alt="DMT Logo" 
                 className="w-full h-full object-cover"
               />

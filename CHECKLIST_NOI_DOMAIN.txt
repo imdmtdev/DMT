@@ -1,0 +1,142 @@
+╔════════════════════════════════════════════════════════════╗
+║              CHECKLIST NỐI CUSTOM DOMAIN                   ║
+╚════════════════════════════════════════════════════════════╝
+
+Domain của bạn: _______________________
+
+════════════════════════════════════════════════════════════
+
+📋 CHUẨN BỊ
+────────────────────────────────────────────────────────────
+
+□ Đã mua domain
+□ Có quyền truy cập DNS management
+□ Biết cách thêm DNS records
+
+════════════════════════════════════════════════════════════
+
+🌐 CẤU HÌNH DNS
+────────────────────────────────────────────────────────────
+
+□ Đã thêm A record: 185.199.108.153
+□ Đã thêm A record: 185.199.109.153
+□ Đã thêm A record: 185.199.110.153
+□ Đã thêm A record: 185.199.111.153
+□ Đã thêm CNAME record: www → dangminhtri123.github.io
+
+Thời gian thêm: ___:___ ngày ___/___/______
+
+════════════════════════════════════════════════════════════
+
+📝 CẬP NHẬT CODE
+────────────────────────────────────────────────────────────
+
+□ Đã sửa file public/CNAME
+   Nội dung: _______________________
+
+□ Đã sửa next.config.js
+   basePath: '' (rỗng)
+
+□ Đã sửa src/app/layout.tsx
+   icon: '/icon.jpg'
+   images: ['/icon.jpg']
+
+□ Đã sửa src/components/Header.tsx
+   src="/icon.jpg"
+
+□ Đã sửa src/components/Footer.tsx
+   src="/icon.jpg"
+
+□ Đã build test local
+   npm run build
+
+□ Đã push lên GitHub
+   git push
+
+════════════════════════════════════════════════════════════
+
+⚙️ CẤU HÌNH GITHUB
+────────────────────────────────────────────────────────────
+
+□ Đã vào Settings → Pages
+   URL: https://github.com/dangminhtri123/DMT/settings/pages
+
+□ Đã nhập Custom domain
+   Domain: _______________________
+
+□ Đã click Save
+
+□ DNS check successful
+   ✅ Thành công
+   ⏳ Đang chờ (thời gian: ___:___ ngày ___/___/___)
+
+□ Đã tick Enforce HTTPS
+   ✅ Đã bật
+
+════════════════════════════════════════════════════════════
+
+🔍 KIỂM TRA
+────────────────────────────────────────────────────────────
+
+□ DNS đã propagate
+   Kiểm tra tại: https://dnschecker.org
+   ✅ Đã OK
+
+□ Website truy cập được
+   https://_______________________ (domain của bạn)
+   ✅ Hoạt động
+
+□ HTTPS hoạt động
+   ✅ Có ổ khóa xanh
+
+□ CSS/JS load đúng
+   ✅ Không có lỗi 404
+
+□ Tất cả trang hoạt động
+   ✅ Trang chủ
+   ✅ Giới thiệu
+   ✅ Dịch vụ
+   ✅ Dự án
+   ✅ Blog
+   ✅ Liên hệ
+
+□ Logo/Icon hiển thị
+   ✅ Header
+   ✅ Footer
+   ✅ Favicon
+
+════════════════════════════════════════════════════════════
+
+🎉 HOÀN THÀNH
+────────────────────────────────────────────────────────────
+
+□ Website đã live với custom domain
+□ Đã test trên nhiều thiết bị
+□ Đã chia sẻ link cho khách hàng
+
+Ngày hoàn thành: ___/___/______
+
+════════════════════════════════════════════════════════════
+
+📝 GHI CHÚ
+────────────────────────────────────────────────────────────
+
+_____________________________________________________________
+
+_____________________________________________________________
+
+_____________________________________________________________
+
+_____________________________________________________________
+
+════════════════════════════════════════════════════════════
+
+🆘 NẾU CÓ VẤN ĐỀ
+────────────────────────────────────────────────────────────
+
+□ Xem file: HUONG_DAN_NOI_DOMAIN.md
+□ Kiểm tra DNS: https://dnschecker.org
+□ Xem GitHub Actions logs
+□ Liên hệ: dangtriofficial@gmail.com
+
+════════════════════════════════════════════════════════════
