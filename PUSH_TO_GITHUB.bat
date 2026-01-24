@@ -3,9 +3,12 @@ echo ========================================
 echo   PUSH CODE LEN GITHUB
 echo ========================================
 echo.
-echo Dang push code len GitHub...
+echo Dang setup remote va push code...
 echo.
 
+git remote remove origin 2>nul
+git remote add origin https://github.com/dangminhtri123/DMT.git
+git branch -M main
 git push -u origin main
 
 echo.

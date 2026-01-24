@@ -1,0 +1,36 @@
+========================================
+  BƯỚC 1: TẠO REPOSITORY TRÊN GITHUB
+========================================
+
+🌐 Truy cập: https://github.com/new
+
+📝 Điền thông tin:
+   Repository name: DMT
+   Description: Website công ty DMT
+   
+   ✅ Chọn: Public
+   ❌ KHÔNG tick bất kỳ checkbox nào
+
+🚀 Click nút: "Create repository"
+
+========================================
+
+Sau khi tạo xong, quay lại đây và:
+👉 Double-click file: PUSH_TO_GITHUB.bat
+
+========================================
+
+🔐 LƯU Ý QUAN TRỌNG:
+Khi push lần đầu, GitHub yêu cầu đăng nhập:
+- Username: dangminhtri123
+- Password: Dùng Personal Access Token
+
+Tạo token tại: https://github.com/settings/tokens
+- Click "Generate new token (classic)"
+- Note: DMT Website
+- Expiration: No expiration
+- Tick: ✅ repo
+- Click "Generate token"
+- Copy token và dùng làm password
+
+========================================

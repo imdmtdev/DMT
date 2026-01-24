@@ -1,0 +1,130 @@
+╔════════════════════════════════════════════════════════════╗
+║           SỬA LỖI DEPLOY - GITHUB PAGES                    ║
+╚════════════════════════════════════════════════════════════╝
+
+🔴 LỖI: Workflow có dấu X đỏ
+📋 NGUYÊN NHÂN: GitHub Pages chưa được bật đúng cách
+
+════════════════════════════════════════════════════════════
+
+✅ GIẢI PHÁP: BẬT GITHUB PAGES ĐÚNG CÁCH
+────────────────────────────────────────────────────────────
+
+BƯỚC 1: Vào trang Pages
+────────────────────────────────────────────────────────────
+Truy cập: https://github.com/dangminhtri123/DMT/settings/pages
+
+⚠️ LƯU Ý: Đây là trang PAGES, không phải ACTIONS!
+
+
+BƯỚC 2: Cấu hình Source
+────────────────────────────────────────────────────────────
+Tại phần "Build and deployment":
+
+1. Tìm dòng "Source"
+2. Click vào dropdown (hiện đang là "Deploy from a branch")
+3. Chọn: "GitHub Actions"
+4. Xong! Không cần click Save
+
+┌─────────────────────────────────────────────────────────┐
+│ Build and deployment                                    │
+│                                                         │
+│ Source                                                  │
+│ ┌─────────────────────────────────────────────┐        │
+│ │ GitHub Actions                              │ ◄─ Chọn│
+│ └─────────────────────────────────────────────┘        │
+│                                                         │
+│ Configure a publishing source for your site.           │
+│ Your site is published from the workflow runs in       │
+│ your repository.                                       │
+└─────────────────────────────────────────────────────────┘
+
+
+BƯỚC 3: Trigger lại workflow
+────────────────────────────────────────────────────────────
+Sau khi chọn "GitHub Actions", chạy lệnh:
+
+Double-click file: UPDATE_WEBSITE.bat
+
+Hoặc chạy lệnh:
+   git commit --allow-empty -m "Deploy"
+   git push
+
+
+BƯỚC 4: Kiểm tra
+────────────────────────────────────────────────────────────
+1. Vào: https://github.com/dangminhtri123/DMT/actions
+2. Xem workflow mới nhất
+3. Chờ đến khi có dấu ✅ xanh (2-3 phút)
+4. Truy cập: https://dangminhtri123.github.io/DMT/
+
+════════════════════════════════════════════════════════════
+
+🔍 KIỂM TRA LỖI CỤ THỂ
+────────────────────────────────────────────────────────────
+
+Nếu vẫn lỗi, click vào workflow bị lỗi để xem chi tiết:
+
+1. Vào: https://github.com/dangminhtri123/DMT/actions
+2. Click vào workflow có dấu X đỏ
+3. Click vào job "build" hoặc "deploy"
+4. Xem log lỗi
+
+Các lỗi thường gặp:
+
+❌ "Error: No uploaded artifact was found!"
+   → GitHub Pages chưa được bật
+   → Làm lại BƯỚC 2
+
+❌ "Error: HttpError: Not Found"
+   → Repository settings chưa đúng
+   → Kiểm tra repository là Public
+
+❌ "npm ci failed"
+   → Lỗi dependencies
+   → Chạy: npm install
+
+════════════════════════════════════════════════════════════
+
+📸 HÌNH ẢNH MINH HỌA
+────────────────────────────────────────────────────────────
+
+Trang Settings → Pages sẽ trông như này:
+
+┌─────────────────────────────────────────────────────────┐
+│ GitHub Pages                                            │
+│                                                         │
+│ ⚠️ Your site is live at                                │
+│    https://dangminhtri123.github.io/DMT/               │
+│                                                         │
+│ Build and deployment                                    │
+│                                                         │
+│ Source: GitHub Actions                                  │
+│                                                         │
+│ Your site is published from the workflow runs in       │
+│ your repository.                                       │
+│                                                         │
+│ Visit site →                                           │
+└─────────────────────────────────────────────────────────┘
+
+════════════════════════════════════════════════════════════
+
+✅ CHECKLIST
+────────────────────────────────────────────────────────────
+
+□ Đã vào đúng trang Pages (không phải Actions)
+□ Đã chọn Source: "GitHub Actions"
+□ Đã trigger lại workflow
+□ Workflow có dấu ✅ xanh
+□ Website đã live
+
+════════════════════════════════════════════════════════════
+
+🆘 VẪN CHƯA ĐƯỢC?
+────────────────────────────────────────────────────────────
+
+Gửi cho tôi:
+1. Screenshot trang Settings → Pages
+2. Log lỗi từ workflow (click vào X đỏ để xem)
+
+════════════════════════════════════════════════════════════
